@@ -1,0 +1,33 @@
+
+GNU Coreutils (https://www.gnu.org/software/coreutils/)
+
+
+arch - returns the machine architecture
+base64 - encodes/decodes base64 text
+basename - print name with leading directory components removed
+cat - concatenates the input with std output
+
+chcon - change SELinux security context of a file (https://docs.fedoraproject.org/en-US/quick-docs/selinux-getting-started/)
+	security context answers the question, may <subject> do <action> to <object> ? - object refers to file, action refers to read/write etc
+```bash
+➜  coreutils-note ls -Z /bin/bash
+system_u:object_r:shell_exec_t:s0 /bin/bash
+```
+
+chgrp - change the group name of a file or directory
+chmod - change the mode of a file (read, write and execution permissions)
+```bash
+➜  bash ls -l                     
+total 12
+-rwxr-xr-x. 1 arivappa arivappa 309 Jan  6 19:58 case.sh
+-rwxr-xr-x. 1 arivappa arivappa  30 Jan  5 14:31 print.sh
+-rw-r--r--. 1 arivappa arivappa 176 Jan  6 20:21 text.txt
+```
+
+chown - change the owner of the group or file
+chroot - change the root directory to the new directory
+cksum - checksums
+comm - compare files
+cp - copy source to destination or copy multiple to a directory
+csplit - output pieces of file seperated by pattern
+cut - print selected parts of lines from each file to standard output
